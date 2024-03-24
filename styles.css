@@ -1,0 +1,250 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu {
+  background-color: #333;
+  color: white;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu ul li a:hover {
+  background-color: #555;
+}
+
+.comic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Hiển thị 5 cột */
+  gap: 70px; /* Khoảng cách giữa các ô */
+}
+
+.comic {
+  border: 1px solid #ccc;
+  padding: 50px;
+}
+
+.comic img {
+  max-width: 100%;
+}
+
+.details {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+}
+
+.buy-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #555;
+}
+/* CSS hiện popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px; /* Kích thước popup */
+}
+button.buy-btn {
+  margin-top: 10px;
+  padding: 10px 20px; /* Tăng kích thước nút mua */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+.login-popup input[type="text"],
+.login-popup input[type="password"],
+.login-popup input[type="email"] {
+  width: calc(100% - 20px); /* Giảm kích thước input để làm cho chúng lớn hơn */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.login-popup button[type="submit"],
+.login-popup button.close-btn {
+  width: 100%; /* Đặt nút đăng nhập và nút đóng đầy đủ chiều rộng */
+  padding: 10px;
+}
+.login-popup button.register-btn {
+  margin-top: 1px;
+  padding: 10px 20px; /* Kích thước nút */
+  background-color: #28a745; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-popup button.register-btn:hover {
+  background-color: #218838; /* Màu nền khi di chuột qua */
+}
+/* CSS khác giữ nguyên */
+
+.login-popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px; /* Kích thước popup */
+  position: relative;
+}
+
+.register-fields {
+  display: none;
+  margin-top: 10px;
+}
+
+/* CSS khác giữ nguyên */
+header {
+  background-color: #fefeff; /* Màu nền của header */
+  color: rgb(24, 41, 199);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: 20px; /* Khoảng cách giữa biểu tượng và tiêu đề */
+}
+
+.logo {
+  width: 100px; /* Kích thước của biểu tượng */
+  height: auto;
+  
+}
+
+.bold-text {
+  font-weight: bold;
+  
+    color: #e21145; /* Màu đỏ */
+}
+.hidden {
+  display: none;
+}
+footer {
+    
+  
+background-color: #faf6f6;
+  
+
+color: #333;
+  
+  
+padding: 1px;
+  
+  
+text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  
+  
+transform: translateX(-50%);
+  width: 80%; /* Adjust the width as needed */
+}
+.hidden {
+  display: none;
+}
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
